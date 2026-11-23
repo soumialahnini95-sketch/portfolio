@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5f2eb" />
+    <meta name="description" content="Parlons de votre projet web. Contactez Soumia Lahnini à Casablanca et décrivez votre besoin via un formulaire simple et sécurisé." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Contact — Soumia Lahnini</title>
+  </head>
+  <body class="contact-page">
+    <div class="announcement"><span class="pulse"></span> Disponible pour de nouveaux projets <span class="announcement-location">· Casablanca & partout au Maroc</span></div>
+    <header class="site-header">
+      <a class="wordmark" href="./index.html" aria-label="Soumia Lahnini, accueil"><span class="wordmark-symbol">s<span>.</span></span><span class="wordmark-name">soumia<span>lahnini</span></span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu"><span></span><span></span></button>
+      <nav id="main-nav" class="main-nav" aria-label="Navigation principale"><a href="./index.html#realisations">Réalisations</a><a href="./index.html#expertise">Expertise</a><a href="./index.html#temoignages">Témoignages</a><a class="nav-contact" href="./index.html" aria-current="page">Contact <span>↗</span></a></nav>
+    </header>
+    <main>
+      <section class="contact-page-hero section-shell">
+        <a class="back-link" href="./index.html#realisations">← Retour aux projets</a>
+        <p class="eyebrow"><span class="eyebrow-line"></span> Un premier échange, simplement</p>
+        <h1>Parlons de<br /><span>votre idée.</span></h1>
+        <p class="contact-page-lede">Quelques repères sur votre projet suffisent pour commencer. Je vous répondrai sur WhatsApp, sans engagement.</p>
+      </section>
+      <section class="contact-form-section section-shell">
+        <form id="contact-form" class="contact-form" aria-labelledby="contact-form-title">
+          <h2 id="contact-form-title" class="sr-only">Formulaire de contact</h2>
+          <div class="form-grid">
+            <div class="field-group"><label for="name">Votre nom</label><input id="name" name="name" type="text" autocomplete="name" placeholder="Comment vous appeler ?" required minlength="2" /></div>
+            <div class="field-group"><label for="email">Votre adresse e-mail</label><input id="email" name="email" type="email" autocomplete="email" placeholder="vous@entreprise.ma" required /></div>
+            <div class="field-group field-full"><label for="project-type">Quel est votre besoin ?</label><select id="project-type" name="projectType" required><option value="" disabled selected>Choisissez le type de projet</option><option>Création de site vitrine</option><option>Refonte de site web</option><option>Projet immobilier ou hospitalité</option><option>Plateforme ou espace métier</option><option>Je souhaite en discuter</option></select></div>
+            <div class="field-group field-full"><label for="message">Quelques mots sur votre projet</label><textarea id="message" name="message" rows="5" placeholder="Votre objectif, vos idées ou votre question…" required minlength="10"></textarea><span class="field-hint">Vos informations ne sont pas enregistrées sur cette page. Elles seront ajoutées au message WhatsApp que vous choisirez d’envoyer.</span></div>
+          </div>
+          <button class="button button-dark form-submit" type="submit">Préparer mon message <span>↗</span></button>
+          <p id="form-status" class="form-status" aria-live="polite" role="status"></p>
+          <a id="whatsapp-fallback" class="whatsapp-fallback" target="_blank" rel="noopener noreferrer" hidden>Ouvrir WhatsApp ↗</a>
+        </form>
+        <aside class="contact-form-aside"><span class="contact-aside-mark">✳</span><p class="eyebrow">Directement</p><h2>On peut aussi<br />se parler.</h2><p>Basée à Casablanca, je travaille avec des projets partout au Maroc.</p><a href="https://wa.me/212669026210" target="_blank" rel="noopener noreferrer" class="contact-direct-link">WhatsApp <span>↗</span></a><a href="tel:+212669026210" class="contact-direct-link">+212 6 69 02 62 10 <span>↗</span></a><span class="contact-location"><span class="pulse"></span> Casablanca, Maroc</span></aside>
+      </section>
+      <section class="contact-page-note section-shell"><p>Un site réussi commence par une bonne conversation.</p><a href="./index.html#realisations">Revoir les projets ↗</a></section>
+    </main>
+    <footer class="site-footer section-shell"><a class="wordmark footer-brand" href="./index.html"><span class="wordmark-symbol">s<span>.</span></span><span class="wordmark-name">soumia<span>lahnini</span></span></a><p>Création web avec intention.<br /><span>Casablanca, Maroc.</span></p><a class="back-top" href="#">Retour en haut ↑</a><div class="footer-bottom"><span>© <span id="year"></span> Soumia Lahnini</span><span>Créé avec soin <b>✳</b></span><a href="https://wa.me/212669026210" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a></div></footer>
+    <script src="./contact.js" defer></script>
+  </body>
+</html>
